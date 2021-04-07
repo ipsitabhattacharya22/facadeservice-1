@@ -70,8 +70,8 @@ class BoomerangHeader extends Component {
         })
 
         //Fetch user
-        let profileServices = baseURL + '/services/users/profile';
-        let navigationServices = baseURL + '/services/users/navigation';
+        let profileServices = baseURL + '/users/profile';
+        let navigationServices = baseURL + '/users/navigation';
         axios.get(profileServices)
         .then((response) => {
             userDetail = Object.assign({}, response.data)
