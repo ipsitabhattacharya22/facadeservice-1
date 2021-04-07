@@ -45,7 +45,7 @@ function serverConfig(env) {
 
   var APP_DIR = path.resolve(__dirname, './src');
 
-  var isnotBoomerang = (env.environment !== 'boomerang');
+  var isnotBoomerang = (env.environment !== 'boomerang' && env.environment !== undefined);
 
   const server = {
     entry: {
@@ -60,7 +60,7 @@ function serverConfig(env) {
     externals: [nodeExternals(), 'electron'],
     plugins: [
       new webpack.DefinePlugin({
-        'process.env.NODE_ENV': JSON.stringify(env.environment)
+        'process.env.NODE_ENV': JSON.stringify(env.environment || 'production')
       })
     ]
   }
@@ -97,7 +97,7 @@ function clientConfig(env) {
 
   var APP_DIR = path.resolve(__dirname, './src');
 
-  var isnotBoomerang = (env.environment !== 'boomerang');
+  var isnotBoomerang = (env.environment !== 'boomerang' && env.environment !== undefined);
 
   const client = {
     entry: {
