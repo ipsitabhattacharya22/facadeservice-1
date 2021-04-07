@@ -1,0 +1,30 @@
+@import "../../styling/style.scss";
+
+.non-bmrg-header {
+    .bx--header {
+        background-color:#FFFFFF;
+        font-family: "IBM Plex Sans", sans-serif;
+        font-size: 14px !important;
+        letter-spacing: 0.16px !important;
+        z-index: 9;
+        box-shadow: 0px 0px 4px 4px #dddddd !important;
+        border-bottom: 0;
+
+        a.bx--header__name, a.bx--header__name:hover {
+            color: #161616;
+        }
+
+        .bx--header__action.bx--btn--icon-only.bx--tooltip__trigger {
+            color: #161616;
+        }
+
+        .bx--header__action:hover {
+            background-color: #ccc;
+        }
+    }
+    .headerpanel-switcher {
+        .bx--switcher__item {
+            margin-top: 0;
+        }
+    }
+}

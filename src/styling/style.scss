@@ -1,0 +1,92 @@
+@import '~@carbon/themes/scss/themes';
+
+// Use the gray 10 theme
+$carbon--theme: $carbon--theme--g10;
+@include carbon--theme();
+
+@import '~carbon-components/scss/globals/scss/styles.scss';
+
+$feature-flags: (
+	ui-shell: true,
+);
+
+$feature-flags: (
+	ui-shell: true,
+	grid-columns-16: true,
+);
+
+$css--font-face: true !default;
+$css--helpers: true !default;
+$css--body: true !default;
+$css--use-layer: true !default;
+$css--reset: true !default;
+$css--plex: true !default;
+$css--use-experimental-grid: false !default;
+$css--use-experimental-grid-fallback: false !default;
+
+//Colors
+
+$white : #ffffff;
+$off-white : #FBFCFC;
+$faded-green : #6F7878;
+$dark-blue : #047CC0;
+$light-blue : #007ED2;
+$light-grey :#9B9B9B;
+$dark-grey :#4A4A4A;
+$blue-grey :#5A6872;
+$charleston-green :#272727;
+$black :#000000;
+$light-green :#6A7978;
+$grey :#EAEAEA;
+$cyan : #B8C1C1;
+$orange : #FF806C;
+$soft-grey : #9b9b9b;
+$dark-green : #40D5BB;
+$light-white : #DCDCDC;
+$cyan-grey : #979797;
+$red-color : #ff0000;
+$greyish-black: #171717;
+
+@import "~carbon-components/scss/globals/scss/feature-flags";
+@import "~carbon-components/scss/globals/scss/vars";
+@import "~carbon-components/scss/globals/scss/colors";
+
+@import "~carbon-components/scss/globals/scss/mixins";
+@import "~carbon-components/scss/globals/scss/layout";
+@import "~carbon-components/scss/globals/scss/layer";
+@import "~carbon-components/scss/globals/scss/spacing";
+
+@import "~carbon-components/scss/globals/scss/import-once";
+@import "~carbon-components/scss/globals/scss/css--reset";
+
+@import "~carbon-components/scss/globals/scss/css--helpers";
+@import "~carbon-components/scss/globals/scss/css--body";
+
+@import "~carbon-components/scss/globals/grid/grid";
+
+//-------------------------
+// 🍕 Components
+//-------------------------
+
+@import "~carbon-components/scss/components/checkbox/checkbox";
+@import "~carbon-components/scss/components/data-table-v2/data-table-v2";
+@import "~carbon-components/scss/components/data-table-v2/data-table-v2-core";
+@import "~carbon-components/scss/components/data-table-v2/data-table-v2-sort";
+@import "~carbon-components/scss/components/link/link";
+@import "~carbon-components/scss/components/modal/modal";
+@import "~carbon-components/scss/components/multi-select/multi-select";
+@import "~carbon-components/scss/components/search/search";
+@import "~carbon-components/scss/components/tabs/tabs";
+@import "~carbon-components/scss/components/loading/_loading";
+@import '~carbon-components/scss/components/slider/slider';
+@import '~carbon-components/scss/components/select/select';
+@import '~carbon-components/scss/components/time-picker/time-picker';
+@import '~carbon-components/scss/components/date-picker/date-picker';
+@import '~carbon-components/scss/components/text-input/text-input';
+@import '~carbon-components/scss/components/number-input/number-input';
+@import '~carbon-components/scss/components/tooltip/tooltip';
+@import '~carbon-components/scss/components/skeleton/skeleton-text';
+@import '~carbon-components/scss/components/text-area/text-area';
+body{
+  font-family: "IBM Plex Sans", sans-serif;
+}
