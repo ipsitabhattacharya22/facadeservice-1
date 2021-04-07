@@ -57,7 +57,12 @@ function serverConfig(env) {
       path: path.resolve(__dirname, 'dist')
     },
     module: moduleObj,
-    externals: [nodeExternals(), 'electron']
+    externals: [nodeExternals(), 'electron'],
+    plugins: [
+      new webpack.DefinePlugin({
+        'process.env.NODE_ENV': JSON.stringify(env.environment)
+      })
+    ]
   }
 
   if (isnotBoomerang) {
