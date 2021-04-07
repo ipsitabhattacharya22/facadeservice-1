@@ -1,0 +1,53 @@
+{
+  "name": "facadeservice",
+  "version": "1.0.0",
+  "description": "A common react library to render the IBM IAW application headers dynamically based on environments",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "webpack",
+    "start": "start-storybook",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.ibm.com/Boomerang-Delivery/facadeservice.git"
+  },
+  "keywords": [
+    "React",
+    "Node"
+  ],
+  "author": "IBM",
+  "license": "IBM Copyright Information",
+  "dependencies": {
+    "@carbon/icons-react": "^10.25.0",
+    "@carbon/themes": "^10.26.0",
+    "carbon-components": "^10.28.0",
+    "carbon-components-react": "^7.27.0",
+    "carbon-icons": "^7.0.7",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.13",
+    "@babel/preset-env": "^7.12.13",
+    "@babel/preset-react": "^7.12.13",
+    "@storybook/addon-knobs": "^6.1.17",
+    "@storybook/react": "^6.1.17",
+    "axios": "^0.21.1",
+    "babel-loader": "^8.2.2",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^5.0.2",
+    "path": "^0.12.7",
+    "react-router-dom": "^5.2.0",
+    "sass": "^1.32.6",
+    "sass-loader": "^10.0.2",
+    "style-loader": "^2.0.0",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-node-externals": "^2.5.2"
+  },
+  "optionalDependencies": {
+    "@boomerang/carbon-addons-boomerang": "^2.7.0",
+    "@boomerang/carbon-addons-boomerang-react": "^3.4.1"
+  }
+}
